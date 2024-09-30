@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-color:#d60808;
+      font-family: Arial, sans-serif;
+    }
+    #container {
+      width: 80%;
+      margin: 0 auto;
+      padding:30px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
+      border-radius: 45px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+    #container h1 {
+      font-size: 2em;
+      color:#be250a;
+      margin-bottom: 30px;
+    }
+    form {
+      width: 50%;
+      margin-right: 50px;
+    }
+    nav a {
+      display: block;
+      float: right;
+      color: white;
+      text-align: center;
+      padding: 30px 30px;
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: larger;
+    }
+    nav a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+     textarea {
+      height: 150px;
+    }
+    input[type="submit"] {
+      background-color: #ca420d;
+      color: #000000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background-color: #c51818;
+    }
+    .info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .info p {
+      margin-bottom: 10px;
+    }
+    .info i {
+      font-size: 2em;
+      color: #be250a;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #ffffff; padding: 10px; color: #fff;">
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div id="container">
+    <form>
+      <h1>Contact Us</h1>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+    <div class="info">
+      <i class="fa fa-phone"></i>
+      <p>123-456-7890</p>
+      <i class="fa fa-envelope"></i>
+      <p>THE_KNOT@matrimonial.com</p>
+      <i class="fa fa-map-marker"></i>
+      <p>123 Main Street, Anytown USA</p>
+    </div>
+  </div>
+</body>
+</html>

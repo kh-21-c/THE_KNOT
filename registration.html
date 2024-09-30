@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			background-image: url(images/couple.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+
+		}
+		h1 {
+			color: #f3f3f3;
+			text-align: center;
+			margin-top: 30px;
+		}
+        h2{
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        form {
+            float: right;
+			max-width: 700px;
+			margin: 0 auto;
+			background-image: url(images/couple.jpg);
+			padding: 30px;
+			border-radius: 45px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.705);
+		}
+        nav a {
+         display: block;
+         float: right;
+         color: white;
+         text-align: center;
+         padding: 20px 20px;
+         text-decoration: none;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         margin-right: 20px;
+         font-weight: bold;
+         font-size: medium;
+        }
+        nav a:hover {
+         background-color: brown;
+         color: white;
+        }
+        label{
+            color: rgb(255, 243, 243); 
+        }
+
+		input[type="text"], input[type="email"], input[type="tel"], select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 3px;
+			border: none;
+			background-color: #c0b5b5;
+			font-size: 16px;
+			color: #666;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #960000;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #00796b;
+		}
+	</style>
+</head>
+<body>
+    <nav>
+        <a href="contact.html">Conatct us</a>
+        <a href="home.html">Home</a>
+    </nav>
+	<h1>Registration Form</h1>
+	<form action="#" method="post">
+		<h2>Personal Information</h2>
+		<label for="name">Full Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="age">Age:</label>
+		<input type="text" id="age" name="age" required>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="">Select Gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="text" id="dob" name="dob" required>
+
+		<label for="religion">Religion:</label>
+		<input type="text" id="religion" name="religion" required>
+
+		<label for="caste">Caste:</label>
+		<input type="text" id="caste" name="caste" required>
+
+		<label for="marital-status">Marital Status:</label>
+		<select id="marital-status" name="marital-status" required>
+			<option value="">Select Marital Status</option>
+			<option value="single">Single</option>
+			<option value="divorced">Divorced</option>
+			<option value="widowed">Widowed</option>
+		</select>
+
+		<label for="height">Height:</label>
+		<input type="text" id="height" name="height" required>
+
+		<h2>Contact Information</h2>
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+    
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+    
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+    
+        <h2>Educational Information</h2>
+        <label for="education">Highest Qualification:</label>
+        <input type="text" id="education" name="education" required>
+    
+        <label for="university">College/University:</label>
+        <input type="text" id="university" name="university" required>
+    
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required>
+    
+        <h2>Family Information</h2>
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" required>
+    
+        <label for="mother-name">Mother's Name:</label>
+        <input type="text" id="mother-name" name="mother-name" required>
+    
+        <label for="siblings">Number of Siblings:</label>
+        <input type="text" id="siblings" name="siblings" required>
+    
+        <label for="family-status">Family Status:</label>
+        <input type="text" id="family-status" name="family-status" required>
+    
+        <h2>Partner Preferences</h2>
+        <label for="partner-age">Age:</label>
+        <input type="text" id="partner-age" name="partner-age" required>
+    
+        <label for="partner-height">Height:</label>
+        <input type="text" id="partner-height" name="partner-height" required>
+    
+        <label for="partner-education">Educational Qualification:</label>
+        <input type="text" id="partner-education" name="partner-education" required>
+    
+        <label for="partner-profession">Profession:</label>
+        <input type="text" id="partner-profession" name="partner-profession" required>
+    
+        <label for="partner-caste">Caste:</label>
+        <input type="text" id="partner-caste" name="partner-caste" required>
+    
+        <label for="partner-religion">Religion:</label>
+        <input type="text" id="partner-religion" name="partner-religion" required>
+    
+        <label for="partner-marital-status">Marital Status:</label>
+        <select id="partner-marital-status" name="partner-marital-status" required>
+            <option value="">Select Marital Status</option>
+            <option value="single">Single</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select>
+    
+        <input type="submit" value="Register">
+    </form>
+    </body>
+    </html>

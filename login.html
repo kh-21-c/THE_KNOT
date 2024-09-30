@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/login.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+    #login-form {
+      position: absolute;
+      top: 30%;
+      left: 70%;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    h1 {
+      color: #f00606;
+      font-family: Arial, sans-serif;
+      font-size: 3em;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 1px 1px 2px black;
+    }
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid #f00606;
+      font-size: 1.2em;
+      font-family: Arial, sans-serif;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      background-color: #f00606;
+      color: white;
+      font-size: 1.2em;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #be250a;
+    }
+    nav {
+      color: white;
+      padding: 20px;
+      
+    }
+    nav a {
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-right: 20px;
+      font-weight: bold;
+      font-size: larger;
+    }
+    nav a:hover {
+      background-color: #f5e509;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="#">Search</a>
+    <a href="registration.html">Register</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+  <div id="login-form">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
